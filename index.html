@@ -108,19 +108,16 @@
           });
 
           ndef.addEventListener("reading", ({ message, serialNumber }) => {
-if (${serialNumber}.length>0){
-	location.assign("https://apps.powerapps.com/play/313085f6-ea37-4af4-a49b-d3088fc02af2?tenantId=8b990db5-437f-4a87-9d0b-1dc1d2a278fb");
-};
-            //log(`> Serial Number: ${serialNumber}`);
-            //char PeopleID = ${serialNumber}
-            //log(`> Records: (${message.records.length})`);
+            log(`> Serial Number: ${serialNumber}`);
+            log(`> Records: (${message.records.length})`);
           });
-
         } catch (error) {
           log("錯誤:" + error);
-        };
+        }
       });
-
     </script>
+<a href="https://apps.powerapps.com/play/313085f6-ea37-4af4-a49b-d3088fc02af2?tenantId=8b990db5-437f-4a87-9d0b-1dc1d2a278fb&testID=123">
+        Launch canvas app
+    </a>
   </body>
 </html>
